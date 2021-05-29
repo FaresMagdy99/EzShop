@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="monospace"
-        android:text="This is the second page"
+        android:text="This is the Fourth page"
         android:textColor="#FF5722"
         android:textSize="24sp"
         android:layout_centerInParent="true"
