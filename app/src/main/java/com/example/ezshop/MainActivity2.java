@@ -40,19 +40,19 @@ public class MainActivity2 extends AppCompatActivity {
                         startActivity(intent);
                     }
                     else if(finalI == 2){
-                        Intent intent = new Intent(MainActivity2.this,ThirdActivity.class);
+                        Intent intent = new Intent(MainActivity2.this,FirstActivity.class);
                         startActivity(intent);
                     }
                     else if(finalI == 3){
-                        Intent intent = new Intent(MainActivity2.this,FourthActivity.class);
+                        Intent intent = new Intent(MainActivity2.this,FirstActivity.class);
                         startActivity(intent);
                     }
                     else if(finalI == 4){
-                        Intent intent = new Intent(MainActivity2.this,FifthActivity.class);
+                        Intent intent = new Intent(MainActivity2.this,FirstActivity.class);
                         startActivity(intent);
                     }
                     else if(finalI == 5){
-                        Intent intent = new Intent(MainActivity2.this,SixthActivity.class);
+                        Intent intent = new Intent(MainActivity2.this,FirstActivity.class);
                         startActivity(intent);
                     }
 

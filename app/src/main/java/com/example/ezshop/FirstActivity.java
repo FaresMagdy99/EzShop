@@ -4,22 +4,25 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.GridLayout;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class FirstActivity extends AppCompatActivity {
     GridLayout mainGrid;
-
+    ImageView item1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first);
 
         mainGrid = (GridLayout) findViewById(R.id.firstmainGrid);
-
+        item1 = (ImageView)findViewById(R.id.firstitem);
         setSingleEvent(mainGrid);
+        item1.setImageResource(R.drawable.cartcir);
     }
 
     private void setSingleEvent(GridLayout mainGrid) {

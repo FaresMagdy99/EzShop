@@ -1,22 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondActivity">
+    android:background="@drawable/bg"
+    tools:context=".ItemViewActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:fontFamily="monospace"
-        android:text="This will be the item view page"
-        android:textColor="#FF5722"
-        android:textSize="24sp"
+    <ImageView
+        android:id="@+id/itemimageView"
+        android:layout_width="321dp"
+        android:layout_height="266dp"
+        android:src="@drawable/item"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</RelativeLayout>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.149" />
+
+    <Button
+        android:id="@+id/addcart"
+        android:layout_width="321dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="104dp"
+        android:background="#232196F3"
+        android:text="add to cart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="321dp"
+        android:layout_height="188dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut feugiat ante. Nulla faucibus sollicitudin velit, eu varius turpis mattis ac. Suspendisse dapibus tincidunt ante, interdum consectetur tortor faucibus eu. Duis tempor, mauris elementum pretium vestibulum, ante ex tincidunt est, eu consectetur dolor quam ac nibh. Pellentesque a euismod leo. Nunc ut maximus sapien. Cras non sodales urna, eu placerat purus. Etiam malesuada sollicitudin metus nec sagittis. Sed malesuada orci suscipit tincidunt pulvinar."
+        app:layout_constraintBottom_toTopOf="@+id/addcart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemimageView"
+        app:layout_constraintVertical_bias="0.357" />
+
+    <ImageView
+        android:id="@+id/cartimage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/cartwhite"
+        app:layout_constraintBottom_toTopOf="@+id/itemimageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.842" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
